@@ -1,0 +1,36 @@
+$text-color: white;
+$background-color: #0496FF;
+
+.root{
+  list-style: none;
+  display: flex;
+  text-align: left;
+}
+
+.link {
+  width: 100%;
+  padding:1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $background-color;
+  text-decoration: none;
+  border: 2px solid $background-color;
+  color: $text-color;
+  &:hover {
+    color: $background-color;
+    background-color: $text-color;
+    & > .icon {
+      color: $background-color;
+    }
+  }
+  &:active {
+    background-color: lighten($background-color,15%);
+  }
+}
+
+.icon {
+  margin-right:0.5em;
+  align-self: flex-start;
+}
