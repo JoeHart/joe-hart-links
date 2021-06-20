@@ -6,6 +6,7 @@ import links from '../content/links'
 import profile from '../content/profile'
 
 import styles from './MainPage.module.scss'
+
 export default function Homepage() {
   return (
     <div className={styles.root}>

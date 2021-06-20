@@ -11,11 +11,11 @@ type Props = {
 
 export default function Link({ link }: Props) {
   switch (link.linkType) {
-    case 'Twitter':
+    case `Twitter`:
       return <TwitterLink {...link} />
-    case 'Website':
+    case `Website`:
       return <WebsiteLink {...link} />
     default:
-      return <p>'Error unsupported link type'</p>
+      return <p>Error unsupported link type</p>
   }
 }

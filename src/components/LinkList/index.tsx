@@ -11,8 +11,8 @@ type Props = {
 export default function LinkList({ links }: Props) {
   return (
     <ul className={styles.root}>
-      {links.map((link, index) => (
-        <Link key={index} link={link} />
+      {links.map((link) => (
+        <Link key={Object.values(link).join()} link={link} />
       ))}
     </ul>
   )
